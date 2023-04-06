@@ -7,7 +7,7 @@ import 'package:sqflite/sqflite.dart';
 export 'package:qrscanner/providers/db_provider.dart';
 
 class DbProvider{
-  static late Database _database;
+  static Database _database;
   static final DbProvider db = DbProvider._();
   DbProvider._();
 
@@ -64,7 +64,7 @@ class DbProvider{
   //  return res;
   //}
 
-  Future <ScanModel?> getScanById(int id) async{
+  Future <ScanModel> getScanById(int id) async{
     final db = await database;
     final res= await db.query('Scan', where: 'id = ?', whereArgs: [id]);
 

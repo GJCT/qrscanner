@@ -4,7 +4,7 @@ import 'package:qrscanner/providers/scan_provider.dart';
 import 'package:qrscanner/utils/utils.dart';
 
 class DirectionPage extends StatelessWidget {
-  const DirectionPage({super.key});
+  const DirectionPage({key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class DirectionPage extends StatelessWidget {
           color: Colors.red,
         ),
         onDismissed: (DismissDirection direction) {
-          Provider.of<ScanListProvider>(context, listen: false).borrarScanById(scanProvider.scan[i].id!);
+          Provider.of<ScanListProvider>(context, listen: false).borrarScanById(scanProvider.scan[i].id);
         },
         child: ListTile(
           leading: Icon(Icons.home, color: Theme.of(context).primaryColor),

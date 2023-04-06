@@ -9,7 +9,7 @@ import 'package:qrscanner/widgets/navigator.dart';
 
 class HomePage extends StatelessWidget {
    
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({key}) : super(key: key);
   
   @override
   Widget build(BuildContext context) {

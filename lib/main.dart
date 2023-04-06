@@ -8,7 +8,7 @@ import 'package:qrscanner/providers/ui_provider.dart';
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

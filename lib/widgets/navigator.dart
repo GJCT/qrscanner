@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 
 import '../providers/ui_provider.dart';
 class NavigatorBar extends StatelessWidget {
-  const NavigatorBar({super.key});
+  const NavigatorBar({key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

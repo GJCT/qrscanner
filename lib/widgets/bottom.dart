@@ -4,7 +4,7 @@ import 'package:provider/provider.dart';
 import 'package:qrscanner/providers/scan_provider.dart';
 
 class ScanBottom extends StatelessWidget {
-  const ScanBottom({super.key});
+  const ScanBottom({key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

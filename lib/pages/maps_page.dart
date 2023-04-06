@@ -5,7 +5,7 @@ import 'package:qrscanner/providers/scan_provider.dart';
 class MapsPage extends StatelessWidget {
 
    
-  const MapsPage({Key? key}) : super(key: key);
+  const MapsPage({Key key}) : super(key: key);
   
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class MapsPage extends StatelessWidget {
           color: Colors.red,
         ),
         onDismissed: (DismissDirection direction) {
-          Provider.of<ScanListProvider>(context, listen: false).borrarScanById(scanProvider.scan[i].id!);
+          Provider.of<ScanListProvider>(context, listen: false).borrarScanById(scanProvider.scan[i].id);
         },
         child: ListTile(
           leading: Icon(Icons.map_sharp, color: Theme.of(context).primaryColor),
